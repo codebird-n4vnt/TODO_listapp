@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+
+*{
+    font-family: Poppins,Haettenschweiler, Arial Narrow Bold, sans-serif;
+}
+
+li{
+    
+    list-style: none;
+}
+.navElement{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+nav li:hover,span:hover{
+    color: #f7dea1; 
+}
+.logo li{
+    font-weight: 700;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 15px 0px;
+    background-color: #4DA8DA;
+    color: white;
+    width: 50vw;
+    margin-bottom: 1.2rem;
+    border-radius: 1rem 0rem 1rem 0rem;
+}
+
+p{
+    max-width: 70%;
+
+}
+
+.links{
+    display: flex;
+}
+.links span{
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 100%;
+}
+
+
+body #root{
+    display:flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main-box{
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.todo-box h2{
+    color: rgb(168, 168, 255);
+}
+.inputs{
+    width: 100%;
+    background-color: #F5F5F5;
+    box-shadow: 0px 0px 5px grey;
+    padding: 1.5rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+    text-align: center;
+    gap: 5px;
+}
+
+.isCompleted{
+    text-decoration: line-through;
+}
+
+.inputs input{
+    width: calc(100% - 5vw);
+    padding: 4px 10px;
+    font-size: 1.2rem;
+    border-radius: 0.4rem;
+    border: 1px solid hsla(44, 22%, 27%, 0.432);
+
+}
+.inputs input:focus{
+    outline: none;
+    border: 1px solid hsla(44, 22%, 27%, 0.432)
+    
+}
+
+
+
+button{
+    background-color: #FFD66B;
+    border: none;
+    cursor: pointer;
+    margin: 2px;
+    padding: 10px 14px;
+    border-radius: 0.8rem;
+
+}
+ button:active{
+    color: #F5F5F5;
+    background-color:  hsla(44, 22%, 27%, 0.432);
+ }
+
+
+ .todo-box li{
+    padding: 4px;
+    margin: 3px 0px;
+    border-bottom:1px solid rgba(0, 0, 0, 0.5) ;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+
+
+ }
+
+ .todo-box{
+    width: 100%;
+    padding: 25px;
+    background-color: #F5F5F5;
+    margin: 5%;
+    border: none;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.582);
+    border-radius: 0rem 0rem 1rem 1rem;
+ }
+
+
+ .li-buttons{
+    display: flex;
+    /* height: 20px; */
+ }
+
+ 
